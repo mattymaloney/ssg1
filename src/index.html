@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ about.title }}</title>
+</head>
+<body>
+	<h1>{{ about.title }}</h1>
+
+	{{{ about.content }}}
+
+	<h2>Bryan is on the internet</h2>
+	<ul>
+		{{#each about.externalLinks }}
+			<li><a href="{{ this.href }}">{{ this.text }}</a></li>
+		{{/each }}
+	</ul>
+</body>
+</html>
